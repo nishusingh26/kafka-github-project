@@ -133,7 +133,7 @@ resource "aws_instance" "Zookeeper-3" {
 resource "aws_security_group" "Private_sg" {
   name = "Security group for Private subnet"
   description = "Security group for Private subnet"
-  vpc_id = "vpc-02a5b0fe61d157137"
+  vpc_id = "vpc-0641b491c4e5aa89a"
 
   ingress {
     from_port = 0
