@@ -37,7 +37,7 @@ resource "local_file" "private_key" {
 resource "aws_instance" "Kafka-1" {
   
   ami = data.aws_ami.ubuntu.id
-  instance_type          = "t2.large"
+  instance_type          = "t2.medium"
   key_name               = "public_key_pair_new"
   associate_public_ip_address = false
   vpc_security_group_ids = [aws_security_group.Private_sg.id]
@@ -51,7 +51,7 @@ resource "aws_instance" "Kafka-1" {
 resource "aws_instance" "Zookeeper-1" {
   
   ami = data.aws_ami.ubuntu.id
-  instance_type          = "t2.large"
+  instance_type          = "t2.medium"
   key_name               = "public_key_pair_new"
   associate_public_ip_address = false
   vpc_security_group_ids = [aws_security_group.Private_sg.id]
@@ -69,7 +69,7 @@ resource "aws_instance" "Zookeeper-1" {
 resource "aws_instance" "Kafka-2" {
   
   ami = data.aws_ami.ubuntu.id
-  instance_type          = "t2.large"
+  instance_type          = "t2.medium"
   key_name               = "public_key_pair_new"
   associate_public_ip_address = false
   vpc_security_group_ids = [aws_security_group.Private_sg.id]
@@ -84,7 +84,7 @@ resource "aws_instance" "Kafka-2" {
 resource "aws_instance" "Zookeeper-2" {
   
   ami = data.aws_ami.ubuntu.id
-  instance_type          = "t2.large"
+  instance_type          = "t2.medium"
   key_name               = "public_key_pair_new"
   associate_public_ip_address = false
   vpc_security_group_ids = [aws_security_group.Private_sg.id]
@@ -101,7 +101,7 @@ resource "aws_instance" "Zookeeper-2" {
 resource "aws_instance" "Kafka-3" {
   
   ami = data.aws_ami.ubuntu.id
-  instance_type          = "t2.large"
+  instance_type          = "t2.medium"
   key_name               = "public_key_pair_new"
   associate_public_ip_address = false
   vpc_security_group_ids = [aws_security_group.Private_sg.id]
@@ -115,7 +115,7 @@ resource "aws_instance" "Kafka-3" {
 resource "aws_instance" "Zookeeper-3" {
   
   ami = data.aws_ami.ubuntu.id
-  instance_type          = "t2.large"
+  instance_type          = "t2.medium"
   key_name               = "public_key_pair_new"
   associate_public_ip_address = false
   vpc_security_group_ids = [aws_security_group.Private_sg.id]
