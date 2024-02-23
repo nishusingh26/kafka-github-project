@@ -1,6 +1,6 @@
 
 resource "aws_route_table" "kafka-private-route" {
-  vpc_id = "vpc-0641b491c4e5aa89a"
+  vpc_id = "vpc-00e59ad4b212fe57b"
 
   route {
     cidr_block = "0.0.0.0/0"
