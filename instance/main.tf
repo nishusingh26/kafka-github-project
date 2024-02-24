@@ -45,6 +45,7 @@ resource "aws_instance" "Kafka-1" {
 
   tags = {
    Name = var.private_server_kafka_1
+   Environment = "Kafka"
   }
 }
 
@@ -59,6 +60,7 @@ resource "aws_instance" "Zookeeper-1" {
 
   tags = {
    Name = var.private_server_zookeeper_1
+   Environment = "Zookeeper"
   }
 }
 
@@ -78,6 +80,7 @@ resource "aws_instance" "Kafka-2" {
 
   tags = {
    Name = var.private_server_kafka_2
+   Environment = "Kafka"
   }
 }
 
@@ -92,6 +95,7 @@ resource "aws_instance" "Zookeeper-2" {
 
   tags = {
    Name = var.private_server_zookeeper_2
+   Environment = "Zookeeper"
   }
 }
 
@@ -109,6 +113,7 @@ resource "aws_instance" "Kafka-3" {
 
   tags = {
    Name = var.private_server_kafka_3
+   Environment = "Kafka"
   }
 }
 
@@ -123,6 +128,7 @@ resource "aws_instance" "Zookeeper-3" {
 
   tags = {
    Name = var.private_server_zookeeper_3
+   Environment = "Zookeeper"
   }
 }
 
