@@ -23,8 +23,3 @@ resource "aws_route_table_association" "Private_association_2" {
   subnet_id      = var.private_subnet_second_id
   route_table_id = var.private_route_id
 }
-
-resource "aws_route_table_association" "Private_association_3" {
-  subnet_id      = var.private_subnet_third_id
-  route_table_id = var.private_route_id
-}
