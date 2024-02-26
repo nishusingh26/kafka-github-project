@@ -28,9 +28,18 @@ resource "tls_private_key" "rsa" {
 
 resource "local_file" "private_key" {
   content  = tls_private_key.rsa.private_key_pem
-  filename = "privatekey"
+  filename = "privatekey.pem"
 }
 
+resource "null_resource" "change_permissions" {
+  triggers = {
+    private_key_content = local_file.private_key.content
+  }
+
+  provisioner "local-exec" {
+    command = "chmod 404 privatekey.pem"
+  }
+}
 #-----------------------------------------------------
 # Create kafka-1 and Zookeeper-1 in Private_subnet-1
 #-----------------------------------------------------
