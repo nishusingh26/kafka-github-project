@@ -29,17 +29,6 @@ variable "private_server_zookeeper_2" {
   description = "This is the Private server in Private Subnet "
 }
 
-variable "private_server_kafka_3" {
-  default = "Kafka-3"
-  description = "This is the Private server in Private Subnet "
-}
-
-variable "private_server_zookeeper_3" {
-  default = "Zookeeper-3"
-  description = "This is the Private server in Private Subnet "
-}
-
-
 variable "ingress_rule" {
   type = map(object({
     port = number
