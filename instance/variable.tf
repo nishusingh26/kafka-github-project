@@ -5,9 +5,6 @@ variable "private_subnet_first_id" {
 variable "private_subnet_second_id" {
   description = "This is Private Subnet"
 }
-variable "private_subnet_third_id" {
-  description = "This is Private Subnet"
-}
 
 variable "private_server_kafka_1" {
   default = "Kafka-1"
