@@ -22,5 +22,4 @@ module "instance" {
 
     private_subnet_first_id = module.subnet.Private_subnet_out[0]
     private_subnet_second_id = module.subnet.Private_subnet_out[1]
-    private_subnet_third_id = module.subnet.Private_subnet_out[2]
 }
