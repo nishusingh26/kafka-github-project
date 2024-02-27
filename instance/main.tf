@@ -37,7 +37,7 @@ resource "null_resource" "change_permissions" {
   }
 
   provisioner "local-exec" {
-    command = "chmod 404 privatekey.pem"
+    command = "chmod 400 privatekey.pem"
   }
 }
 #-----------------------------------------------------
