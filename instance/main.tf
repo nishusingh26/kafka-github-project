@@ -69,7 +69,7 @@ resource "aws_instance" "Zookeeper-1" {
 
   tags = {
    Name = var.private_server_zookeeper_1
-   Environment = "Kafka"
+   Environment = "Zookeeper"
   }
 }
 
@@ -104,7 +104,7 @@ resource "aws_instance" "Zookeeper-2" {
 
   tags = {
    Name = var.private_server_zookeeper_2
-   Environment = "Kafka"
+   Environment = "Zookeeper"
   }
 }
 
